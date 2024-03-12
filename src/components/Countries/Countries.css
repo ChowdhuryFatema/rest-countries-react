@@ -1,0 +1,17 @@
+.country-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.country-name-list {
+    padding: 0;
+}
+.country-name-list li {
+    list-style: none;
+}
+
+@media screen and (max-width: 780px) {
+    .country-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

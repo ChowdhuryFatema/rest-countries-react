@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Country from "../Country/Country";
-import './Country.css';
+import './Countries.css';
 
 
 const Countries = () => {
@@ -35,7 +35,7 @@ const Countries = () => {
                 <h5>Visited Countries: {visitedCountries.length}</h5>
                 <ul className="country-name-list">
                     {
-                        visitedCountries.map(country => <li key={country.cca3}>Name: {country.name.common}</li>)
+                        visitedCountries.map(country => <li key={country.cca3}><strong>Name:</strong> {country.name.common}</li>)
                     }
                 </ul>
                 <div>
